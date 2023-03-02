@@ -1,7 +1,6 @@
 # Web BLE OTA for ESP32
 
-This tool is the Web Bluetooth version of the https://github.com/fbiego/ESP32_BLE_OTA_Arduino solution.
-The main focus is implementing firmware updates via Web Bluetooth.
+This tool is the Web Bluetooth version of the https://github.com/fbiego/ESP32_BLE_OTA_Arduino solution. The main focus is implementing firmware updates via Web Bluetooth.
 
 The Web Bluetooth API provides the ability to connect and interact with Bluetooth Low Energy peripherals. You’ll find Web Bluetooth:
 - on the desktop (or laptop) in Chrome, Edge and Opera browsers (make sure you have the latest)
