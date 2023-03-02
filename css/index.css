@@ -1,0 +1,38 @@
+.content {
+    padding: 10px 0;
+}
+
+.image {
+    background: #ddd;
+    border: 2px solid #aaa;
+    margin: 10px 0;
+    padding: 10px;   
+}
+
+.image.active {
+    background: #eee;
+    border: 2px solid #0a0;
+    margin: 10px 0;
+    padding: 8px;   
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #700;
+}
+
+table th {
+    padding: 5px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #fff;
+    background: #700;
+}
+
+table td {
+    padding: 5px;
+    text-align: left;
+    font-size: 0.9em;
+    border-bottom: 1px solid #700;
+}

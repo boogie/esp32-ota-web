@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Andras Barthazi">
+    <title>esp32 ota</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="theme-color" content="#563d7c">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <span id="device-name">Connect your device</span>
+    </a>
+</nav>
+<main role="main" class="container">
+
+<div class="starter-template">
+    <h1>ESP32 OTA</h1>
+    <div class="content" id="initial-screen">
+        <div class="alert alert-primary" role="alert" id="bluetooth-is-available">
+            <b><span id="bluetooth-is-available-message"></span></b>
+            This tool is compatible with desktops (or laptops) with the <b>latest Chrome, Opera and Edge</b> browsers, and working
+            Bluetooth connection (most laptops have them these days). You can also try it from Chrome on Android, or Bluefy on iOS/iPadOS.
+        </div>
+        <div id="connect-block" style="display: none;">
+            <div class="form-group form-inline">
+                <div class="col-auto">
+                    <input id="device-name-input" type="text" class="form-control" id="device-name-input" placeholder="Device name (optional)">
+                </div>
+                <div class="col-auto">
+                    <button id="button-connect" type="submit" class="btn btn-primary"><i class="bi-bluetooth"></i> Connect</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="connecting-screen" style="display: none;">
+        <div class="alert alert-primary" role="alert">
+            Connecting...
+          </div>
+    </div>
+    <div class="content" id="connected-screen" style="display: none;">
+        <div class="container">
+            <div>
+                <button id="button-disconnect" type="submit" class="btn btn-secondary"><i class="bi-x-square"></i> Disconnect</button>
+            </div>
+            <hr />
+            <h3>Image Upload</h3>
+            <div class="form-group">
+                <input type="file" class="form-control" id="file-image" />
+            </div>
+            <div class="image">
+                <div class="form-group">
+                    <div id="file-status">Select image file (.bin)</div>
+                    <div id="file-info"></div>
+                </div>
+                <button class="btn btn-primary" id="file-upload" disabled><i class="bi-upload"></i> Upload</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/esp32-ota.js?v=1"></script>
+<script src="js/index.js?v=1"></script>
+</main>
